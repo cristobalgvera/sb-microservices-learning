@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    username: admin
+    password: admin
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+    properties:
+      format-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  sql:
+    init:
+      mode: always
