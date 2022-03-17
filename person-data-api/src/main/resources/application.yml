@@ -19,3 +19,8 @@ spring:
   sql:
     init:
       mode: always
+
+feign:
+  autoconfiguration:
+    jackson:
+      enabled: true
