@@ -1,4 +1,4 @@
-package com.nttdata.persondataapi.peopledata;
+package com.nttdata.persondataapi.persondata;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -14,16 +14,16 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/v1/people-data")
 @RequiredArgsConstructor
-public class PeopleDataController {
-    private final PeopleDataService peopleDataService;
+public class PersonDataController {
+    private final PersonDataService peopleDataService;
 
     @GetMapping
-    public ResponseEntity<Page<PeopleData>> findAll(Pageable pageable) {
+    public ResponseEntity<Page<PersonData>> findAll(Pageable pageable) {
         return ResponseEntity.ok(peopleDataService.findAll(pageable));
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<PeopleData> findById(@PathVariable UUID id) {
+    public ResponseEntity<PersonData> findById(@PathVariable UUID id) {
         return ResponseEntity.ok(peopleDataService.findById(id));
     }
 }

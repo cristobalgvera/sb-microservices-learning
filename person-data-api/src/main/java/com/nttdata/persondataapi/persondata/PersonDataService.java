@@ -1,4 +1,4 @@
-package com.nttdata.persondataapi.peopledata;
+package com.nttdata.persondataapi.persondata;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -9,14 +9,14 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class PeopleDataService {
-    private final PeopleDataClient peopleDataClient;
+public class PersonDataService {
+    private final PersonDataClient peopleDataClient;
 
-    public Page<PeopleData> findAll(Pageable pageable) {
+    public Page<PersonData> findAll(Pageable pageable) {
         return peopleDataClient.findAll(pageable);
     }
 
-    public PeopleData findById(UUID id) {
+    public PersonData findById(UUID id) {
         return peopleDataClient.findById(id);
     }
 }
