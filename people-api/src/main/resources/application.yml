@@ -2,6 +2,8 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: people-api
   datasource:
     username: admin
     password: admin
