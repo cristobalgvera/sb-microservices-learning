@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.nttdata</groupId>
-    <artifactId>microservices-learning</artifactId>
+    <artifactId>people-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>microservices-learning</name>
-    <description>microservices-learning</description>
+    <name>people-api</name>
+    <description>people-api</description>
     <properties>
         <java.version>17</java.version>
         <spring.version>2.6.4</spring.version>
