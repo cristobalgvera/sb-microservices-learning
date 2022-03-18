@@ -13,4 +13,5 @@ public final class PersonData {
     private String surname;
     private LocalDateTime bornDate;
     private String address;
+    private String balancer;
 }
