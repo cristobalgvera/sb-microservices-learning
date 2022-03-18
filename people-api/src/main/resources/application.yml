@@ -26,3 +26,11 @@ spring:
   sql:
     init:
       mode: always
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+
+config:
+  balancer:
+    test: ${BALACER_TEST:default value}

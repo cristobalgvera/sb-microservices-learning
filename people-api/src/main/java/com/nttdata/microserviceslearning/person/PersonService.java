@@ -2,7 +2,6 @@ package com.nttdata.microserviceslearning.person;
 
 import com.nttdata.microserviceslearning.person.dto.PersonDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
