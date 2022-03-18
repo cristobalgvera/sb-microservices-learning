@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "1030fbbb-2de4-4874-bc67-3176ea8fe7aa",
+		"name": "Microservices Learning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Person Data",
+			"item": [
+				{
+					"name": "Find people data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}:{{PEOPLE_DATA_PORT}}/v1/people-data?sort=name,desc",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"port": "{{PEOPLE_DATA_PORT}}",
+							"path": [
+								"v1",
+								"people-data"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "name,desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find person data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}:{{PEOPLE_DATA_PORT}}/v1/people-data/5952bb13-23f0-4192-8ab6-bbcb81e7dd2e",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"port": "{{PEOPLE_DATA_PORT}}",
+							"path": [
+								"v1",
+								"people-data",
+								"5952bb13-23f0-4192-8ab6-bbcb81e7dd2e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
