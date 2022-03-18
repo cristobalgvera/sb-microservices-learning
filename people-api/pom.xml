@@ -22,6 +22,7 @@
         <org.projectlombok.mapstruct.binding.version>0.2.0</org.projectlombok.mapstruct.binding.version>
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <eureka.client.version>3.1.1</eureka.client.version>
+        <loadbalancer.version>3.1.1</loadbalancer.version>
     </properties>
     <dependencies>
         <dependency>
@@ -82,6 +83,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
             <version>${eureka.client.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+            <version>${loadbalancer.version}</version>
         </dependency>
     </dependencies>
 
