@@ -1,0 +1,18 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: person-data-api
+          uri: lb://person-data-api
+          predicates: Path=/api/**
+          filters: StripPrefix=1
+
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://localhost:8761/eureka
