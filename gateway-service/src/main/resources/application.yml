@@ -9,8 +9,6 @@ spring:
       routes:
         - id: person-data-api
           uri: lb://person-data-api
-          predicates: Path=/api/**
-          filters: StripPrefix=1
 
   eureka:
     client:
