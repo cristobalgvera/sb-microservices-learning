@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: ${PORT:0}
 
 eureka:
   instance:
@@ -33,4 +33,4 @@ spring:
 
 config:
   balancer:
-    test: ${BALACER_TEST:default value}
+    test: ${BALANCER_TEST:default value}
